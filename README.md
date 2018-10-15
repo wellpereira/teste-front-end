@@ -1,4 +1,4 @@
-![Easynvest](https://camo.githubusercontent.com/c4ee611d69893fec43b903eb88a444530eaf8e7f/68747470733a2f2f7777772e656173796e766573742e636f6d2e62722f66617669636f6e2e69636f)
+![Easynvest](https://user-images.githubusercontent.com/8808895/46966234-81191d00-d083-11e8-8da3-63d1f12e4365.png)
 
 # Teste de Front-end Easynvest
 Este teste é apresentado aos candidatos as vagas de desenvolvimento Front-end para avaliar os quesitos técnicos.
@@ -120,7 +120,7 @@ Lista local:
 
 ![inputs](./images/name_validation.png)
 
-### Botão Abilitado:
+### Botão Habilitado:
  - Cor da fonte com foco: <span style="color:#ffffff">*#ffffff*</span>.
  - Cor de background: <span style="color:#00c8b3">*#00c8b3*</span>.
 
@@ -143,7 +143,7 @@ Lista local:
 
 **Criar animação de loading ao clicar no submit*
 
-### Exemplo final
+### Exemplo Final
 
 ![inputs](./images/form.png)
 
