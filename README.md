@@ -30,7 +30,7 @@ Para gerar os arquivos de build da aplicação execute:
 
 ```shell
 
-npm build
+npm run build
 
 ```
 
