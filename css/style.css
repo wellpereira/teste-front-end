@@ -1,0 +1,229 @@
+body {
+  font-family: Avenir Next, Avenir, SegoeUI, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Form */
+.form {
+  margin: 2em 0;
+}
+
+.field {
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 1em;
+}
+
+label,
+input {
+  transition: all 0.2s;
+  touch-action: manipulation;
+}
+
+input {
+  color: #333333;
+  font-size: 1.5em;
+  font-family: inherit;
+  border: 0;
+  border-bottom: 1px solid #333333;
+  -webkit-appearance: none;
+  border-radius: 0;
+  padding: 0.2em;
+  cursor: text;
+}
+
+input:focus {
+  color: #333333;
+  outline: 0;
+  border-bottom: 1px solid #333333;
+}
+
+label {
+  color: #efeeed;
+  letter-spacing: 0.05em;
+}
+
+input:placeholder-shown + label {
+  cursor: text;
+  max-width: 66.66%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left bottom;
+  transform: translate(0, 2.125rem) scale(1.5);
+}
+
+::-webkit-input-placeholder {
+  opacity: 0;
+  transition: inherit;
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+input:not(:placeholder-shown) + label,
+input:focus + label {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
+}
+
+/* input errors */
+.input-message-error {
+  width: 100%;
+  font-size: 8px;
+  color: #eb4a46;
+}
+.input-error {
+  color: #eb4a46 !important;
+  border-color: #eb4a46 !important;
+}
+
+/* Button */
+.button-system {
+  color: #fff;
+  margin-top: 44px;
+  min-width: 268px;
+  border: none;
+  border-radius: 100px;
+  padding: 0.8em 0;
+  background-color: #00c8b3;
+  cursor: pointer;
+  outline: none;
+}
+
+.button-system:hover {
+  opacity: 0.7;
+  -moz-opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+
+.text-submit {
+  font-size: 1.6em;
+  display: block;
+}
+
+button:disabled {
+  color: #dddcdc;
+  background-color: #f6f6f6;
+}
+
+/* Loader */
+.loader {
+  margin: 0 auto;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  border-top: 2px solid #00c8b3;
+  width: 28px;
+  height: 28px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  display: none;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Button back */
+a.link-bottom-page {
+  text-align: right;
+  display: block;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00c8b3;
+}
+
+/* Lists box */
+.list-container {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* List */
+table,
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+/* New Register Button */
+
+.new-register {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  appearance: auto;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+}
+
+a.new-register:hover {
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 96%;
+    margin: 2%;
+    overflow: hidden;
+  }
+
+  .button-system {
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .list-container {
+    overflow-x: auto;
+  }
+
+  table {
+    margin-bottom: 38px;
+  }
+}

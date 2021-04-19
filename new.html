@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Formulário Cadastro</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="messageView"></div>
+      <form class="form">
+        <div class="field">
+          <input value="" type="text" id="fullname" required placeholder=" " />
+          <label for="fullname">Nome completo (sem abreviações)</label>
+        </div>
+
+        <div class="field">
+          <input value="" type="email" id="email" required placeholder=" " />
+          <label for="email">E-mail</label>
+        </div>
+
+        <div class="field">
+          <input value="" type="text" id="cpf" required placeholder=" " />
+          <label for="cpf">CPF</label>
+        </div>
+
+        <div class="field">
+          <input value="" type="tel" id="phone" required placeholder=" " />
+          <label for="phone">Telefone</label>
+        </div>
+
+        <button type="submit" class="button-system" disabled>
+          <div class="loader"></div>
+          <span class="text-submit">Cadastrar</span>
+        </button>
+      </form>
+
+      <a href="index.html" class="link-bottom-page">Voltar</a>
+    </div>
+
+    <script src="dist/bundle.js"></script>
+  </body>
+</html>
