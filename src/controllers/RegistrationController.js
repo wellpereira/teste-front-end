@@ -30,7 +30,6 @@ export class RegistrationController {
       this._listRegisters.add(newRegister);
       this._message.text = "Cadastro criado com sucesso";
       this._clearForm();
-      console.log(newRegister);
       return newRegister;
     } catch (error) {
       console.log(error);
