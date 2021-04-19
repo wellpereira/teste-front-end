@@ -1,150 +1,45 @@
-![Easynvest](https://user-images.githubusercontent.com/8808895/46966234-81191d00-d083-11e8-8da3-63d1f12e4365.png)
+# Teste de Front End &middot; [![npm](https://img.shields.io/badge/npm-V7.9.0-blue)](https://www.npmjs.com/package/npm/v/7.9.0) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
 
-# Teste de Front-end Easynvest
-Este teste é apresentado aos candidatos as vagas de desenvolvimento Front-end para avaliar os quesitos técnicos.
+Teste de Front para EasyInvest.
 
-### O Desafio
+## Installing / Getting started
 
-Seu objetivo é criar um simples app que deve conter duas páginas, uma que exibe um formulário com os campos abaixo, e outra que liste os dados cadastrados.
+Uma rápida introdução da configuração mínima necessária para prepara a aplicação para rodar.
 
-* Nome completo
-* CPF
-* Telefone
-* Email
+Execute dentro da pasta do projeto:
 
-### Pré-requisitos: 
- - Deve ser possível criar, listar e excluir os dados cadastrados pelo formulário;
- - Os inputs de texto e botão devem ter a aparência conforme o guia de estilo abaixo (com validações);
- - Fazer a persistência dos dados no `localStorage` ou `IndexedDB`;
- - Não é permitido a utilização de nenhum framework ou o uso de qualquer biblioteca (exceto para testes unitário e tasks de build), recomendado uso de ECMAScript 6+;
+```shell
 
-Para ter o estado inicial da lista de usuário utilizar este recurso abaixo:
+npm install
 
-> GET https://private-21e8de-rafaellucio.apiary-mock.com/users
-
-Response:
-
-```json
-
-[
-  {
-    "name": "My name 1",
-    "cpf": "04080757247",
-    "phone": "11987654321",
-    "email": "myemail1@test.com.br"
-  },
-  {
-    "name": "My name 2",
-    "cpf": "77797584192",
-    "phone": "11987654321",
-    "email": "myemail2@test.com.br"
-  },
-  {
-    "name": "My name 3",
-    "cpf": "45486737688",
-    "phone": "11987654321",
-    "email": "myemail3@test.com.br"
-  }
-]
 ```
 
-A partir deste ponto utilizar o `localStorage/IndexedDB` para persistir localmente as informações.
+## Developing
 
-Save:
+Para subir a aplicação execute:
 
-```json
-{
-  "name": "My name 4",
-  "cpf": "74668869066",
-  "phone": "11987654321",
-  "email": "myemail4@test.com.br"
-}
+```shell
+
+npm start
+
 ```
 
-Lista local:
-```json
-[
-  {
-    "name": "My name 1",
-    "cpf": "04080757247",
-    "phone": "11987654321",
-    "email": "myemail1@test.com.br"
-  },
-  {
-    "name": "My name 2",
-    "cpf": "77797584192",
-    "phone": "11987654321",
-    "email": "myemail2@test.com.br"
-  },
-  {
-    "name": "My name 3",
-    "cpf": "45486737688",
-    "phone": "11987654321",
-    "email": "myemail3@test.com.br"
-  },
-  {
-    "name": "My name 4",
-    "cpf": "74668869066",
-    "phone": "11987654321",
-    "email": "myemail4@test.com.br"
-  }
-]
+### Building
+
+Para gerar os arquivos de build da aplicação execute:
+
+```shell
+
+npm build
+
 ```
 
-### Plus:
- - A página ser responsiva;
- - Permitir edição;
- - Uso de pré-processador css;
- - Testes End to End;
+### Test
 
-### O que esperamos:
- - Testes, no mínimo testes unitários;
- - Padrão de Projeto e boas práticas de Orientação a Objetos;
- - Utilizar ECMAScript 6+;
- - Criar um passo a passo de como rodar sua aplicação [(Sugestão)](https://github.com/wearehive/project-guidelines/blob/master/README.sample.md);
- - Criar uma breve descrição da solução utilizada.
+Para rodar os testes da aplicação execute:
 
+```shell
 
-## Guia de estilo
+npm test
 
-### Input:
- - Cor da fonte sem foco: <span style="color:#efeeed">*#efeeed*</span>.
- - Cor da fonte com foco: <span style="color:#333333">*#333333*</span>.
- - Cor da borda: <span style="color:#efeeed">*#efeeed*</span>.
-
-![inputs](./images/name.png)
-
-### Input Inválido:
- - Cor da fonte: <span style="color:#eb4a46">*#eb4a46*</span>.
- - Cor da borda: <span style="color:#eb4a46">*#eb4a46*</span>.
-
-![inputs](./images/name_validation.png)
-
-### Botão Habilitado:
- - Cor da fonte com foco: <span style="color:#ffffff">*#ffffff*</span>.
- - Cor de background: <span style="color:#00c8b3">*#00c8b3*</span>.
-
-![inputs](./images/button_enable.png)
-
-### Botão Hover:
- - Opacidade do botão com hover: 70%.
-
-![inputs](./images/button_enable_hover.png)
-
-### Botão Desabilitado:
- - Cor da fonte sem foco: <span style="color:#dddcdc">*#dddcdc*</span>.
- - Cor de background: <span style="color:#f6f6f6">*#f6f6f6*</span>.
-
-![inputs](./images/button_disable.png)
-
-### Botão Loading:
-
-![inputs](./images/button_enable_loading.png)
-
-**Criar animação de loading ao clicar no submit*
-
-### Exemplo Final
-
-![inputs](./images/form.png)
-
-** Use sua criatividade para criar a página para listar os dados cadastrados **
+```
